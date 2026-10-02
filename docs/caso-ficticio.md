@@ -1,45 +1,51 @@
 # El adaptador que sí estaba en casa
 
-**Caso ficticio de demostración · A mano · 2 de octubre de 2026**
+**Caso de demostración · A mano · 2 de octubre de 2026**
 
-Lucía es un personaje inventado. Su situación sirve para explicar y probar el producto; no representa a una amiga, cliente o participante real. La aplicación y las comprobaciones técnicas enlazadas sí existen.
+Una necesidad pequeña, en un momento concreto
 
-![Interfaz real de A mano mostrando su colección ficticia de demostración](../artifacts/redesign-desktop.png)
+Lucía es diseñadora y trabaja desde el escritorio de su apartamento. En los cajones guarda cables, herramientas pequeñas y documentos. Las cosas que usa todos los días están a mano; las que necesita de vez en cuando son las que le cuesta encontrar.
 
-## Una necesidad pequeña, en un momento concreto
+Hoy quiere mostrar una presentación del portátil en el televisor. Sabe que tiene un adaptador, pero no recuerda cómo se llama ni en qué cajón lo dejó. Lo que tiene en la cabeza es «lo que conecta el computador al televisor», no «USB-C a HDMI».
 
-Imaginemos a Lucía, una diseñadora que trabaja desde el escritorio de su apartamento. Guarda cables, herramientas pequeñas y documentos en distintos cajones. No necesita catalogar toda su casa: quiere recordar dónde puso esas pocas cosas que usa de vez en cuando.
+Abre A mano y busca: quiero mostrar la pantalla del computador en el televisor. Con la búsqueda semántica activada, aparece la ficha del adaptador. La ubicación anotada es Cajón superior del escritorio · estuche gris. También hay un detalle que le conviene recordar antes de levantarse: necesita un cable HDMI aparte.
 
-Hoy quiere mostrar una presentación del portátil en el televisor. Recuerda que tiene un adaptador, pero no su nombre ni dónde lo guardó. Una lista titulada «USB-C a HDMI» ayuda poco si lo que tiene en la cabeza es «lo que conecta el computador al televisor».
+La ficha le da un lugar donde buscar. Después le toca abrir el estuche y comprobar las conexiones de sus equipos. Si cambia el adaptador de sitio al terminar, tendrá que actualizar su ubicación para encontrarlo la próxima vez.
 
-La hipótesis de A mano es sencilla: guardar el lugar junto con una descripción de para qué sirve el objeto permite recuperarlo por su uso. Lucía solo podría obtener esa ayuda si hubiera registrado el objeto previamente y mantuviera su ubicación al día.
+Esa es la necesidad que aborda A mano: recordar dónde guardaste algo, incluso cuando recuerdas mejor para qué sirve que su nombre.
 
-## El recorrido que puedes reproducir
+Prueba el mismo recorrido
 
-Abre [A mano](https://eazyhood.github.io/a-mano/) y mantén seleccionada **Explorar demo**. Sus diez objetos son ficticios y están separados de la colección personal.
+Abre A mano y mantén seleccionada Explorar demo. Esta colección incluye diez objetos y está separada de Mis cosas, donde puedes crear tus propios registros.
 
-1. Busca **`estuche gris`**. Aparece **Adaptador USB-C a HDMI**, porque esas palabras forman parte de su ubicación registrada. Esta búsqueda literal no necesita descargar el modelo.
-2. Borra la búsqueda y pulsa **Activar** para habilitar la búsqueda semántica. La primera preparación descarga aproximadamente **160 MB** de modelo y componentes públicos; espera a que termine.
-3. Escribe **`quiero mostrar la pantalla del computador en el televisor`**. Es la consulta indirecta usada en las pruebas: el modelo sugiere el adaptador aunque la frase no sea su título.
-4. Abre su ficha. La ubicación anotada es **`Cajón superior del escritorio · estuche gris`**. La descripción también recuerda que necesita un cable HDMI aparte. La app muestra el registro; comprobar que el adaptador sigue allí corresponde a la persona.
-5. Para probar el mantenimiento del inventario, pasa a **Mis cosas** y crea un objeto de prueba sin información privada. Edita su ubicación y expórtalo desde **Copias de seguridad**. Así puedes revisar también qué ocurre después de encontrar y mover una cosa.
+Busca estuche gris. Aparece Adaptador USB-C a HDMI, porque esas palabras forman parte de su ubicación registrada. Esta búsqueda literal no necesita descargar el modelo.
 
-En la historia, el siguiente paso de Lucía sería revisar el estuche y comprobar las conexiones de sus equipos. Encontrar una ficha no demuestra compatibilidad física ni que una presentación haya salido bien.
+Borra la búsqueda y pulsa Activar para habilitar la búsqueda semántica. La primera preparación descarga aproximadamente 160 MB de modelo y componentes públicos; espera a que termine.
 
-## Qué aporta frente a una nota
+Escribe quiero mostrar la pantalla del computador en el televisor. El modelo sugiere el adaptador aunque la frase no coincida con su título.
 
-Una nota basta cuando recuerdas las mismas palabras que escribiste. A mano conserva esa búsqueda directa y añade una segunda entrada: describir la función del objeto. La salida sigue siendo una ficha editable con un lugar concreto, sin generar una ubicación nueva.
+Abre su ficha. Encontrarás la ubicación Cajón superior del escritorio · estuche gris y la indicación de que necesita un cable HDMI aparte.
 
-El catálogo visual ayuda a recorrer la colección: nombres y lugares visibles, ilustraciones decorativas, filtros por habitación y una ficha centrada en el objeto. Las transiciones acompañan el cambio de posición de las tarjetas; se desactivan con la preferencia de movimiento reducido. Las ilustraciones no son fotografías de las pertenencias de Lucía.
+Pasa a Mis cosas y crea un objeto de prueba sin información privada. Edita su ubicación y expórtalo desde Copias de seguridad. Así puedes recorrer también lo que ocurre después de encontrar y mover una cosa.
 
-## Lo probado y lo que sigue siendo una hipótesis
+Para recuperar un objeto, primero hay que registrarlo. Mantener su ubicación al día es lo que permite que la siguiente búsqueda siga siendo útil.
 
-El repositorio contiene **55 pruebas unitarias** y comprobaciones de navegador para búsqueda, edición, persistencia, respaldo y ejecución real del modelo ONNX. En la evaluación sintética de diez objetos, la búsqueda híbrida recuperó el objetivo en **9 de 11 consultas**; hubo dos fallos. Es una muestra pequeña, no una medición con personas. [Resultados y límites](ai-evaluation.md).
+Qué aporta frente a una nota
 
-No se midieron minutos ahorrados, compras evitadas ni satisfacción de Lucía: no existe una usuaria real detrás del relato. La utilidad cotidiana deberá validarse con personas que decidan probar la app.
+Una nota funciona bien cuando recuerdas las palabras que escribiste. A mano conserva esa búsqueda directa y añade otra posibilidad: describir la función del objeto.
 
-Los datos personales se guardan en este navegador, sin cifrado ni sincronización. Una ubicación desactualizada puede llevar al cajón equivocado. El modelo puede sugerir un objeto incorrecto; la búsqueda literal permanece disponible. [Privacidad, instalación y evidencia](../README.md).
+Lucía puede buscar «estuche gris» si recuerda dónde lo guardó, o explicar qué quiere conectar si solo recuerda para qué lo necesita. En ambos casos, el resultado es una ficha con la información registrada. La aplicación no inventa una ubicación.
 
----
+El catálogo también permite recorrer la colección sin escribir una búsqueda. Muestra nombres y lugares, incluye filtros por habitación y reúne los detalles de cada objeto en su ficha. Las ilustraciones sirven de apoyo visual; no son fotografías de las pertenencias registradas.
 
-Este caso es material de demostración del producto. **No es una candidatura a DEV Weekend / Build for a Friend:** esa convocatoria exige una persona real. Código, documentación e ilustraciones se prepararon con asistencia de OpenAI Codex; no se afirma autoría exclusivamente humana.
+Las transiciones acompañan el movimiento de las tarjetas y se desactivan cuando está habilitada la preferencia de movimiento reducido.
+
+Funcionamiento y límites
+
+El repositorio contiene 55 pruebas unitarias y comprobaciones de navegador para búsqueda, edición, persistencia, respaldo y ejecución real del modelo ONNX.
+
+En una evaluación sintética con diez objetos, la búsqueda híbrida recuperó el objetivo en 9 de 11 consultas. Hubo dos fallos. Es una muestra pequeña y sus resultados no equivalen a una evaluación con personas ni permiten afirmar cuánto tiempo ahorra la aplicación.
+
+Los datos personales se guardan en este navegador, sin cifrado ni sincronización. Una ubicación desactualizada puede llevar al cajón equivocado, y el modelo puede sugerir un objeto incorrecto. La búsqueda literal permanece disponible.
+
+La utilidad cotidiana depende de un hábito sencillo: guardar suficiente información para reconocer cada cosa y actualizar su lugar cuando se mueve.
