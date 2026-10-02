@@ -2,7 +2,9 @@
   "name": "amano",
   "version": "0.1.0",
   "private": true,
-  "overrides": { "sharp": "0.35.4" },
+  "overrides": {
+    "sharp": "0.35.4"
+  },
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1",
@@ -11,18 +13,19 @@
     "test": "vitest run"
   },
   "dependencies": {
+    "@fontsource-variable/archivo": "5.3.0",
     "@huggingface/transformers": "3.8.1",
+    "lucide-react": "0.544.0",
     "react": "19.1.1",
-    "react-dom": "19.1.1",
-    "lucide-react": "0.544.0"
+    "react-dom": "19.1.1"
   },
   "devDependencies": {
+    "@playwright/test": "1.55.1",
     "@types/react": "19.1.16",
     "@types/react-dom": "19.1.9",
     "@vitejs/plugin-react": "5.0.4",
     "typescript": "5.9.2",
     "vite": "7.1.7",
-    "vitest": "3.2.4",
-    "@playwright/test": "1.55.1"
+    "vitest": "3.2.4"
   }
 }

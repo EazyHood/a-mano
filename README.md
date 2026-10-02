@@ -4,7 +4,7 @@
 
 [Open A mano](https://eazyhood.github.io/a-mano/)
 
-![A mano desktop interface with a fictional household collection](artifacts/preview-desktop.png)
+![A mano catalogue interface with a fictional household collection](artifacts/redesign-desktop.png)
 
 The interface is in Spanish. Try the fictional collection, search `estuche gris`, or activate the optional local model and ask `quiero mostrar la pantalla del computador en el televisor`. The adapter's card leads to the exact location originally written in the record. A mano does not track objects or generate their locations.
 
@@ -26,6 +26,8 @@ Requires Node 20.19+ or 22.12+; built and tested with Node 24.16. `npm run build
 5. **Copias de seguridad** exports a versioned JSON file. Import validates the complete file and asks for confirmation before replacing the personal collection. Corrupt stored data is never silently replaced on startup.
 
 Keyboard: Tab and Enter for controls, Ctrl/Cmd+K for search, Escape for dialogs. Reduced-motion preferences are respected. Room filters scroll horizontally on narrow screens.
+
+The catalogue design uses self-hosted Archivo, warm neutral surfaces and an ultramarine accent. Original vector objects have material detail and restrained shadows. Card movement preserves spatial context when filtering; hover and dialog transitions support inspection. Animations are disabled when reduced motion is requested. Illustrations remain decorative, not photos of saved possessions.
 
 ## What the open AI actually does
 
@@ -51,6 +53,7 @@ npm run build
 # With the built preview server running:
 AMANO_URL=http://127.0.0.1:4173 node scripts/browser-check.mjs
 AMANO_URL=http://127.0.0.1:4173 node scripts/browser-model-check.mjs
+AMANO_URL=http://127.0.0.1:4173 node scripts/design-check.mjs
 ```
 
 On PowerShell, set `$env:AMANO_URL` instead of the inline assignment. The browser scripts use an isolated **headless Edge** context, never a personal browser profile. The model check uses an isolated cache under `.cache/`, excluded from git. It will download public model assets when necessary.

@@ -1,0 +1,36 @@
+{
+  "time": "2026-10-02T13:30:30.602Z",
+  "status": "passed",
+  "url": "http://127.0.0.1:5183",
+  "firstPlaceBottom": 897.09375,
+  "hoverTransform": "matrix(0.999396, -0.0347567, 0.0347567, 0.999396, 0, -5.97544)",
+  "reducedAnimations": 0,
+  "layouts": [
+    {
+      "width": 375,
+      "documentWidth": 375,
+      "firstCardTop": 696.984375
+    },
+    {
+      "width": 390,
+      "documentWidth": 390,
+      "firstCardTop": 680.484375
+    },
+    {
+      "width": 768,
+      "documentWidth": 768,
+      "firstCardTop": 746.6875
+    }
+  ],
+  "checks": [
+    "First object name and recorded location visible at 1440 x 900",
+    "Hover, filter, modal open/Escape close under 4x CPU throttling",
+    "Ctrl+K focus",
+    "No initial animations with reduced motion",
+    "No horizontal overflow at 375, 390 and 768"
+  ],
+  "errors": [],
+  "limits": [
+    "Headless desktop emulation, not a physical mobile or measured frame-rate benchmark"
+  ]
+}

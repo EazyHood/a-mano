@@ -4,6 +4,7 @@
 - Human instruction: review Jhona's existing apps, or create a useful new one, prioritizing exceptionally high quality. Concept selected: household object-location recall with local open-model search.
 - Prior references: TwinSheet, PackCheck, ImportFix, DockBrief and Benchkeep. They did not establish a real friend/family recipient. No source from those apps was copied into this implementation.
 - OpenAI Codex produced implementation, original SVG illustrations, documentation and tests with independent agent review. No human field testing, user interview or adoption is claimed.
+- On 2 October Jhona requested a less generic visual design, original animations and stronger craft. The catalogue redesign, material-style SVGs and motion were produced with the same declared AI assistance; no human-only design authorship is claimed.
 - Demo records, dates, private-marker strings and evaluation queries are synthetic. Timestamps on fictional records are not repository history or evidence of prior user activity.
 - MiniLM embeddings are executed genuinely on local CPU and browser ONNX WASM. Lexical matching and deterministic storage/validation are separate conventional code, not presented as model inference.
 - An E5 comparison and a fragmented-index experiment were retained as research evidence but not adopted because they failed to improve the measured tradeoff. No repeated search over many models is concealed.

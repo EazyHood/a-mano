@@ -1,8 +1,8 @@
 {
-  "time": "2026-10-02T04:37:05.52Z",
+  "time": "2026-10-02T13:27:13.025Z",
   "status": "passed",
   "browser": "Headless Edge isolated context",
-  "loadMs": 9997,
+  "loadMs": 12994,
   "semanticTitles": [
     "Adaptador USB-C a HDMI"
   ],
@@ -19,11 +19,15 @@
       "method": "GET"
     },
     {
-      "url": "http://127.0.0.1:5183/assets/index-CFarmvjQ.js",
+      "url": "http://127.0.0.1:5183/assets/index-Cv7aTbhk.js",
       "method": "GET"
     },
     {
-      "url": "http://127.0.0.1:5183/assets/index-C9unDh-O.css",
+      "url": "http://127.0.0.1:5183/assets/index-EP3rE_-x.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/assets/archivo-latin-wght-normal-E0tuGl4L.woff2",
       "method": "GET"
     },
     {
@@ -35,11 +39,15 @@
       "method": "GET"
     },
     {
-      "url": "http://127.0.0.1:5183/assets/index-CFarmvjQ.js",
+      "url": "http://127.0.0.1:5183/assets/index-Cv7aTbhk.js",
       "method": "GET"
     },
     {
-      "url": "http://127.0.0.1:5183/assets/index-C9unDh-O.css",
+      "url": "http://127.0.0.1:5183/assets/index-EP3rE_-x.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/assets/archivo-latin-wght-normal-E0tuGl4L.woff2",
       "method": "GET"
     },
     {
@@ -67,11 +75,11 @@
       "method": "GET"
     },
     {
-      "url": "https://huggingface.co/api/resolve-cache/models/Xenova/paraphrase-multilingual-MiniLM-L12-v2/2c4055b12046f11709e9df2c122e59ffbdc2f900/tokenizer_config.json",
+      "url": "https://us.aws.cdn.hf.co/xet-bridge-us/64623c13d290a75bd98bdc54/fe584e09808b408472e9556eb0d8db4b797690702ab6f43ad18e59f5b5b2cd10",
       "method": "GET"
     },
     {
-      "url": "https://us.aws.cdn.hf.co/xet-bridge-us/64623c13d290a75bd98bdc54/fe584e09808b408472e9556eb0d8db4b797690702ab6f43ad18e59f5b5b2cd10",
+      "url": "https://huggingface.co/api/resolve-cache/models/Xenova/paraphrase-multilingual-MiniLM-L12-v2/2c4055b12046f11709e9df2c122e59ffbdc2f900/tokenizer_config.json",
       "method": "GET"
     },
     {
@@ -95,6 +103,5 @@
     "Synthetic data only; no household or physical mobile user test.",
     "Offline tested in already-loaded session, not offline page reload.",
     "Model similarity is not a probability; false matches remain possible."
-  ],
-  "redaction": "Temporary public-asset download query parameters omitted; originals retained locally. No test results changed."
+  ]
 }

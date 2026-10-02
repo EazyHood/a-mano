@@ -9,3 +9,4 @@ playwright-report/
 /artifacts/*failure*
 /artifacts/*initial*
 /artifacts/css-probe-*
+/artifacts/redesign-layout.json
