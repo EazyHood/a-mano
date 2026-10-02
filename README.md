@@ -8,7 +8,7 @@
 
 The interface is in Spanish. Try the fictional collection, search `estuche gris`, or activate the optional local model and ask `quiero mostrar la pantalla del computador en el televisor`. The adapter's card leads to the exact location originally written in the record. A mano does not track objects or generate their locations.
 
-**Walk through a concrete example:** [El adaptador que sí estaba en casa](docs/caso-ficticio.md) · [English version](docs/fictional-case.md). Lucía is an explicitly fictional character; the guide uses the existing demo and real technical evidence, not a customer testimonial.
+**Walk through a concrete example:** [El adaptador que sí estaba en casa](docs/caso-lucia.md) · [English version](docs/case-study.md). Lucía is a pseudonym for the real person whose story Jhona supplied and confirmed. The public demo collection remains synthetic and does not expose her personal inventory.
 
 ## Run
 
@@ -44,7 +44,7 @@ The actual inference happens on the device, with no paid or hosted inference API
 - Personal records are in localStorage on this browser/origin, not synchronized and not encrypted. Browser data deletion can remove them. Export backups deliberately and keep them private.
 - The site host sees ordinary page requests, and the model host sees asset download requests. No analytics, mail sending, account linking or user-text API is implemented.
 - The synthetic browser test checks that a distinctive query/location marker is absent from network URLs and request bodies. This is a scoped test, not a universal privacy certification.
-- Illustrations are original decorative SVG drawings, not photos or evidence of ownership. Demo objects and scenarios are fictional.
+- Illustrations are original decorative SVG drawings, not photos or evidence of ownership. Public demo objects and evaluation queries are synthetic, distinct from the author-provided case described above.
 - Similarity can be wrong. In a small synthetic evaluation, the hybrid search recovered 9 of 11 target records, and abstained for two absent objects. It missed the Allen-key and sofa-measuring paraphrases. A second model and fragmented indexing did not improve the tradeoff, so they were not adopted. This is not a user study or a general accuracy claim. [Evaluation](docs/ai-evaluation.md).
 
 ## Validation
@@ -66,6 +66,6 @@ Tests cover data validation, import round trips, malformed/oversized/duplicate f
 
 New project created **2 October 2026 UTC** after the DEV Weekend window opened. Jhona requested a new useful app after reviewing five earlier projects. Source code was written for this app, with OpenAI Codex assistance; previous apps were references for needs, not copied as new entries. [Origin record](docs/PROVENANCE.md).
 
-**No DEV submission is claimed.** On 2 October, Jhona chose an explicitly fictional demonstration case. The product and guide can be reviewed independently, but that case does not satisfy DEV Weekend's requirement to build for a real friend or loved one. No real relationship, testimonial or use experience is claimed. Reuse in another competition requires checking its actual rules first.
+**DEV submission is being prepared; publication is not yet confirmed.** On 2 October, Jhona supplied an updated case and confirmed that Lucía is a pseudonym for a real person who prefers privacy. This supersedes the earlier fictional narrative. The public demo and quantitative evaluation remain synthetic; no interview, measured personal time savings or independent user study is claimed. [Provenance](docs/PROVENANCE.md).
 
 MIT license for this repository. Third-party software and model licensing remain separate; see [notices](THIRD_PARTY_NOTICES.md).
