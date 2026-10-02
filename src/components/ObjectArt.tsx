@@ -1,0 +1,38 @@
+import type { Item } from '../domain';
+
+/** Original illustrations, decorative: the written object name remains the source of truth. */
+export function ObjectArt({ item, hero = false }: { item: Item; hero?: boolean }) {
+  const text = item.title.toLowerCase();
+  const kind = /bombilla|lámpara/.test(text) ? 'bulb' : /pila|batería/.test(text) ? 'batteries' : /paraguas/.test(text) ? 'umbrella' : /cinta|metro/.test(text) ? 'measure' : /allen|hexagonal/.test(text) ? 'allen' : /hilo|costura|aguja|tijera/.test(text) ? 'sewing' : /cable|adaptador|cargador|hdmi|usb/.test(text) ? 'cable' : /auricular|audífono/.test(text) ? 'headphones' : /llave/.test(text) ? 'keys' : /pasaporte|garantía|document|manual|papel/.test(text) || item.category === 'documentos' ? 'papers' : item.category === 'herramientas' ? 'tools' : item.category === 'tecnologia' ? 'camera' : 'box';
+  return <svg className={`object-art ${hero ? 'object-art-large' : ''}`} viewBox="0 0 240 160" fill="none" aria-hidden="true">
+    <ellipse cx="121" cy="136" rx="62" ry="7" fill="currentColor" opacity=".07" />
+    <g stroke="currentColor" strokeWidth="2.4" strokeLinejoin="round" strokeLinecap="round">
+      {kind === 'bulb' && <><path d="M102 102c0-16-20-20-20-47 0-46 77-46 77 0 0 25-20 31-20 47z" fill="var(--paper)"/><path d="M102 102h37v10h-37zm2 10h33v9h-33zm5 9h23l-6 9h-11z" fill="var(--paper)"/><path d="m113 99-7-33 13 6 15-6-7 33m-25-60c-7 3-11 8-12 17"/><path d="M120 7V1m48 30 9-6M70 30l-9-6m119 42h11M52 65h12" opacity=".6"/></>}
+      {kind === 'batteries' && <><rect x="67" y="48" width="37" height="84" rx="6" fill="var(--paper)"/><path d="M78 48v-7h15v7m-26 22h37m-19 16v18m-8-9h16"/><rect x="130" y="35" width="37" height="84" rx="6" fill="var(--paper)" transform="rotate(10 149 77)"/><path d="m148 36 1-7 15 2-1 7m-29 20 36 6m-26 26 15 2"/><path d="m65 142 104-14" opacity=".35"/></>}
+      {kind === 'umbrella' && <><path d="M61 85c0-72 119-72 119 0-15-14-24-13-39 0-14-14-25-14-40 0-13-15-26-14-40 0Z" fill="var(--paper)"/><path d="M120 27v-9m0 9C97 44 100 85 100 85m20-58c23 17 21 58 21 58m-21-58v98c0 21 27 21 27 1"/><path d="m64 46-4 9m117-15 4 10m-129 52-3 10" opacity=".4"/></>}
+      {kind === 'measure' && <><path d="M73 63c0-32 78-34 82 0v40c0 25-82 27-82 0Z" fill="var(--paper)"/><circle cx="113" cy="77" r="25"/><circle cx="113" cy="77" r="16"/><path d="M99 47V34h26v13m25 42h44v20h-48" fill="var(--paper)"/><path d="M161 90v9m10-9v6m10-6v9m10-9v6m3-10v28m-90-37h18"/></>}
+      {kind === 'allen' && <><path d="M65 37v89h42" strokeWidth="12"/><path d="M90 36v66h35" strokeWidth="10"/><path d="M116 35v48h28" strokeWidth="8"/><path d="M142 34v31h24" strokeWidth="7"/><path d="M170 33v16h16" strokeWidth="6"/><path d="M65 43v76m25-70v47m26-52v32m26-35v20" stroke="var(--paper)" strokeWidth="2" opacity=".7"/></>}
+      {kind === 'cable' && <><path d="M84 105C38 108 41 47 80 42c38-5 44 22 23 40-17 16-6 40 16 39 22-1 35-16 35-37" strokeWidth="9" /><path d="M84 105C38 108 41 47 80 42c38-5 44 22 23 40-17 16-6 40 16 39 22-1 35-16 35-37" stroke="var(--paper)" strokeWidth="3" /><rect x="137" y="51" width="34" height="41" rx="8" fill="var(--paper)" transform="rotate(12 154 72)"/><path d="m145 49 3-15 21 5-3 15" fill="var(--paper)"/><path d="m153 39-2 8m8-6-2 8"/><rect x="75" y="96" width="33" height="21" rx="4" fill="var(--paper)"/><path d="M108 99h15v14h-15m6-9h4"/><path d="m149 64 12 3m-14 4 12 3"/></>}
+      {kind === 'headphones' && <><path d="M65 91V70c0-66 109-66 109 0v21" strokeWidth="13"/><path d="M66 79V70c0-65 107-65 107 0v9" stroke="var(--paper)" strokeWidth="5"/><rect x="52" y="76" width="28" height="48" rx="11" fill="var(--paper)"/><rect x="161" y="76" width="28" height="48" rx="11" fill="var(--paper)"/><path d="M79 83v32m82-32v32m15 12c-1 14-20 15-30 15"/><rect x="126" y="134" width="20" height="8" rx="4" fill="var(--paper)"/></>}
+      {kind === 'keys' && <><ellipse cx="103" cy="65" rx="28" ry="26" strokeWidth="5"/><path d="m114 80 43 43 14-14-8-8-7 6-9-9 6-7-15-15" fill="var(--paper)"/><circle cx="130" cy="74" r="17" fill="var(--paper)"/><circle cx="130" cy="72" r="5"/><path d="m82 79-20 46 17 7 4-10-8-3 5-10 8 4 11-25" fill="var(--paper)"/><circle cx="93" cy="79" r="16" fill="var(--paper)"/><circle cx="93" cy="75" r="5"/><path d="M93 61c1-10 11-15 19-12"/></>}
+      {kind === 'papers' && <><path d="m69 43 95-9 9 96-94 9z" fill="var(--paper)"/><path d="M76 41v91M91 48l60-6"/><rect x="85" y="27" width="82" height="102" rx="5" fill="var(--paper)" transform="rotate(5 126 78)"/><path d="m96 45 54 5m-55 7 43 4m-43 8 51 5m-51 10 34 3m-34 9 50 4"/><path d="m134 109 14 1"/><path d="M119 25v21a6 6 0 0 0 12 0V29a3 3 0 0 0-6 0v15"/></>}
+      {kind === 'tools' && <><path d="m76 32 12 4-13 45-12-4z" fill="var(--paper)"/><path d="m79 32 6-15 6 2-3 17"/><path d="m64 80-13 44c-3 11 15 17 19 6l13-45z" fill="var(--paper)"/><path d="m65 95-8 27m15-25-8 27"/><path d="m117 33 25 3-12 90c-2 11-21 8-20-3z" fill="var(--paper)"/><path d="m99 34 55 6 3-16-55-7z" fill="var(--paper)"/><path d="m123 59 10 1m-12 10 10 1m-11 10 10 1m-11 10 10 1"/><path d="m166 54 10 3-14 69-10-3z" fill="var(--paper)"/><path d="m173 56 3-20 6 1-5 21"/></>}
+      {kind === 'sewing' && <><path d="M65 47h46v76H65z" fill="var(--paper)"/><ellipse cx="88" cy="47" rx="29" ry="9" fill="var(--paper)"/><ellipse cx="88" cy="122" rx="29" ry="9" fill="var(--paper)"/><path d="m67 58 40 8m-40 3 40 8m-40 4 40 8m-40 4 40 8m-40 4 40 8"/><path d="m137 48 25 80m13-91-25 77"/><ellipse cx="169" cy="128" rx="12" ry="10" transform="rotate(-20 169 128)" fill="var(--paper)"/><ellipse cx="145" cy="127" rx="12" ry="10" transform="rotate(20 145 127)" fill="var(--paper)"/><circle cx="157" cy="91" r="3"/></>}
+      {kind === 'camera' && <><rect x="57" y="53" width="126" height="75" rx="12" fill="var(--paper)"/><path d="m93 52 8-18h35l9 18" fill="var(--paper)"/><circle cx="122" cy="91" r="27"/><circle cx="122" cy="91" r="19"/><path d="M64 71h21m74-8h13m-6 4v5M68 54v-8h16v8"/><path d="M109 87c0-8 7-12 14-12"/></>}
+      {kind === 'box' && <><path d="m65 59 61-21 57 25-63 22z" fill="var(--paper)"/><path d="M65 59v55l55 24V85m0 53 63-22V63" fill="var(--paper)"/><path d="m94 48 56 25v24l-13 5V78" fill="var(--paper)"/><path d="m78 93 25 10v18l-25-11z"/><path d="m84 102 12 5"/></>}
+    </g>
+  </svg>;
+}
+
+export function ShelfArt() {
+  return <svg className="shelf-art" viewBox="0 0 300 190" fill="none" aria-hidden="true">
+    <path d="M30 172h247" stroke="var(--ink)" strokeWidth="2" strokeLinecap="round" opacity=".2"/>
+    <path d="M52 119h143v52H52z" fill="var(--clay)"/><path d="M46 110h156v17H46z" fill="var(--clay)" stroke="var(--ink)" strokeWidth="1.6"/>
+    <path d="M52 127v44h143v-44" stroke="var(--ink)" strokeWidth="1.6"/><rect x="100" y="139" width="49" height="18" rx="2" fill="var(--paper)"/><path d="M111 148h26" stroke="var(--ink)" strokeWidth="1.4"/>
+    <path d="m86 109-5-65 28-3 6 68" fill="var(--lavender)" stroke="var(--ink)" strokeWidth="1.6"/><path d="m112 109 7-83 29 3-7 80" fill="var(--butter)" stroke="var(--ink)" strokeWidth="1.6"/><path d="m90 55 15-1m-14 7 14-1m18-19 18 2m-20 51 16 1" stroke="var(--ink)" strokeWidth="1.3"/>
+    <path d="M229 130V62m0 45c-40-4-43-37-19-25 12 6 19 25 19 25Zm0-25c36-7 41-37 19-27-13 6-19 27-19 27Zm0-16c-28-4-31-28-14-21 10 5 14 21 14 21Z" fill="var(--sage)" stroke="var(--green)" strokeWidth="1.6"/>
+    <path d="m211 128 5 41h30l5-41z" fill="var(--butter)" stroke="var(--ink)" strokeWidth="1.6"/><path d="M207 124h48v10h-48z" fill="var(--butter)" stroke="var(--ink)" strokeWidth="1.6"/>
+    <path d="m53 55 3 7 7 1-6 5 1 7-5-4-7 3 2-7-5-5 7-1z" fill="var(--sage)"/>
+    <path d="m174 28 2 7 7 2-7 2-2 7-2-7-7-2 7-2z" fill="var(--clay)"/>
+  </svg>;
+}

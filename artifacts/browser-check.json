@@ -1,0 +1,100 @@
+{
+  "time": "2026-10-02T04:37:05.52Z",
+  "status": "passed",
+  "browser": "Headless Edge isolated context",
+  "loadMs": 9997,
+  "semanticTitles": [
+    "Adaptador USB-C a HDMI"
+  ],
+  "checks": [
+    "Recorded location found by words, before AI.",
+    "Personal add/edit/favorite survive local persistence; isolated from fictional demo.",
+    "Backup exported, delete canceled/confirmed, validated restore explicitly confirmed.",
+    "Real ONNX WASM browser inference: indirect Spanish query, exact location retained, absent query, clear in-flight query, offline inference in already-loaded session."
+  ],
+  "errors": [],
+  "requests": [
+    {
+      "url": "http://127.0.0.1:5183/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/assets/index-CFarmvjQ.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/assets/index-C9unDh-O.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/favicon.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/assets/index-CFarmvjQ.js",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/assets/index-C9unDh-O.css",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/favicon.svg",
+      "method": "GET"
+    },
+    {
+      "url": "http://127.0.0.1:5183/assets/search.worker-B8v88ImU.js",
+      "method": "GET"
+    },
+    {
+      "url": "https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2/resolve/2c4055b12046f11709e9df2c122e59ffbdc2f900/tokenizer.json",
+      "method": "GET"
+    },
+    {
+      "url": "https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2/resolve/2c4055b12046f11709e9df2c122e59ffbdc2f900/tokenizer_config.json",
+      "method": "GET"
+    },
+    {
+      "url": "https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2/resolve/2c4055b12046f11709e9df2c122e59ffbdc2f900/config.json",
+      "method": "GET"
+    },
+    {
+      "url": "https://huggingface.co/api/resolve-cache/models/Xenova/paraphrase-multilingual-MiniLM-L12-v2/2c4055b12046f11709e9df2c122e59ffbdc2f900/config.json",
+      "method": "GET"
+    },
+    {
+      "url": "https://huggingface.co/api/resolve-cache/models/Xenova/paraphrase-multilingual-MiniLM-L12-v2/2c4055b12046f11709e9df2c122e59ffbdc2f900/tokenizer_config.json",
+      "method": "GET"
+    },
+    {
+      "url": "https://us.aws.cdn.hf.co/xet-bridge-us/64623c13d290a75bd98bdc54/fe584e09808b408472e9556eb0d8db4b797690702ab6f43ad18e59f5b5b2cd10",
+      "method": "GET"
+    },
+    {
+      "url": "https://huggingface.co/Xenova/paraphrase-multilingual-MiniLM-L12-v2/resolve/2c4055b12046f11709e9df2c122e59ffbdc2f900/onnx/model_quantized.onnx",
+      "method": "GET"
+    },
+    {
+      "url": "https://us.aws.cdn.hf.co/xet-bridge-us/64623c13d290a75bd98bdc54/1bdde20dc7b6cefb4b4f81ef3d1f8c3090d8db5a452fd1db9fbfdc0dab422105",
+      "method": "GET"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1/dist/ort-wasm-simd-threaded.jsep.mjs",
+      "method": "GET"
+    },
+    {
+      "url": "https://cdn.jsdelivr.net/npm/@huggingface/transformers@3.8.1/dist/ort-wasm-simd-threaded.jsep.wasm",
+      "method": "GET"
+    }
+  ],
+  "limits": [
+    "Synthetic data only; no household or physical mobile user test.",
+    "Offline tested in already-loaded session, not offline page reload.",
+    "Model similarity is not a probability; false matches remain possible."
+  ],
+  "redaction": "Temporary public-asset download query parameters omitted; originals retained locally. No test results changed."
+}

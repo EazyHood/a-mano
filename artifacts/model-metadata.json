@@ -1,0 +1,120 @@
+{
+  "_id": "64623c13d290a75bd98bdc54",
+  "id": "Xenova/paraphrase-multilingual-MiniLM-L12-v2",
+  "private": false,
+  "pipeline_tag": "feature-extraction",
+  "library_name": "transformers.js",
+  "tags": [
+    "transformers.js",
+    "onnx",
+    "bert",
+    "feature-extraction",
+    "base_model:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "base_model:quantized:sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "region:us"
+  ],
+  "downloads": 726975,
+  "likes": 18,
+  "modelId": "Xenova/paraphrase-multilingual-MiniLM-L12-v2",
+  "author": "Xenova",
+  "sha": "2c4055b12046f11709e9df2c122e59ffbdc2f900",
+  "lastModified": "2025-07-22T00:07:45Z",
+  "gated": false,
+  "disabled": false,
+  "mask_token": "<mask>",
+  "model-index": null,
+  "config": {
+    "architectures": [
+      "BertModel"
+    ],
+    "model_type": "bert",
+    "tokenizer_config": {
+      "bos_token": "<s>",
+      "cls_token": "<s>",
+      "eos_token": "</s>",
+      "mask_token": {
+        "__type": "AddedToken",
+        "content": "<mask>",
+        "lstrip": true,
+        "normalized": true,
+        "rstrip": false,
+        "single_word": false
+      },
+      "pad_token": "<pad>",
+      "sep_token": "</s>",
+      "unk_token": "<unk>"
+    }
+  },
+  "cardData": {
+    "base_model": "sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2",
+    "library_name": "transformers.js"
+  },
+  "transformersInfo": {
+    "auto_model": "AutoModel",
+    "pipeline_tag": "feature-extraction",
+    "processor": "AutoTokenizer"
+  },
+  "siblings": [
+    {
+      "rfilename": ".gitattributes"
+    },
+    {
+      "rfilename": "README.md"
+    },
+    {
+      "rfilename": "config.json"
+    },
+    {
+      "rfilename": "onnx/model.onnx"
+    },
+    {
+      "rfilename": "onnx/model_bnb4.onnx"
+    },
+    {
+      "rfilename": "onnx/model_fp16.onnx"
+    },
+    {
+      "rfilename": "onnx/model_int8.onnx"
+    },
+    {
+      "rfilename": "onnx/model_q4.onnx"
+    },
+    {
+      "rfilename": "onnx/model_q4f16.onnx"
+    },
+    {
+      "rfilename": "onnx/model_quantized.onnx"
+    },
+    {
+      "rfilename": "onnx/model_uint8.onnx"
+    },
+    {
+      "rfilename": "special_tokens_map.json"
+    },
+    {
+      "rfilename": "tokenizer.json"
+    },
+    {
+      "rfilename": "tokenizer_config.json"
+    },
+    {
+      "rfilename": "unigram.json"
+    }
+  ],
+  "spaces": [
+    "lamhieu/lightweight-embeddings",
+    "tfrere/flavor-pairings",
+    "ZenDzenNN/deepsite-project-coa1u",
+    "ArceLearns/buscador-tesis-unam",
+    "kairavaclfe/lightweight-embeddings",
+    "kairavaclfe/myownembedding",
+    "SL-lab/kb-demo",
+    "Divadl/Werkzeugkiste",
+    "MakPr016/Voice-Enabled-RAG",
+    "neurocheckout-ai/ecommerce-support-intent-classifier",
+    "neurocheckout-ai/product-similarity-demo",
+    "AdamKovar/prihoriva-hra"
+  ],
+  "createdAt": "2023-05-15T14:05:07Z",
+  "usedStorage": 2680987180
+}

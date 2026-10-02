@@ -1,0 +1,18 @@
+{
+  "format": "amano-inventory",
+  "version": 1,
+  "exportedAt": "2026-10-02T04:36:51.716Z",
+  "items": [
+    {
+      "id": "4d095853-6c43-4c9e-a3a7-ec503c76ad09",
+      "title": "Linterna de prueba",
+      "category": "hogar",
+      "room": "estudio",
+      "place": "Segunda caja AMANO_PRIVATE_SYNTHETIC_8491",
+      "description": "Sirve para iluminar cuando se va la luz. Dato sintético de prueba.",
+      "tags": [],
+      "favorite": true,
+      "updatedAt": "2026-10-02T04:36:51.646Z"
+    }
+  ]
+}

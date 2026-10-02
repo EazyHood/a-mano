@@ -1,0 +1,220 @@
+{
+  "date": "2026-10-02T04:21:17.194Z",
+  "kind": "synthetic exploratory cases, not user validation",
+  "model": "Xenova/paraphrase-multilingual-MiniLM-L12-v2",
+  "revision": "2c4055b12046f11709e9df2c122e59ffbdc2f900",
+  "dtype": "q8",
+  "runtime": "Transformers.js 3.8.1 / Node CPU",
+  "loadedMs": 12748.6705,
+  "results": [
+    {
+      "query": "quiero conectar mi laptop al televisor",
+      "expected": "adaptador",
+      "ranking": [
+        {
+          "id": "adaptador",
+          "similarity": 0.5748587320681877
+        },
+        {
+          "id": "pilas",
+          "similarity": 0.3427407292650074
+        },
+        {
+          "id": "bombilla",
+          "similarity": 0.28811186408657263
+        }
+      ],
+      "ms": 6.800699999999779
+    },
+    {
+      "query": "se soltó un tornillo del mueble",
+      "expected": "allen",
+      "ranking": [
+        {
+          "id": "garantia",
+          "similarity": 0.39843765721543944
+        },
+        {
+          "id": "allen",
+          "similarity": 0.3712965422388649
+        },
+        {
+          "id": "costura",
+          "similarity": 0.24564842335263498
+        }
+      ],
+      "ms": 5.788699999999153
+    },
+    {
+      "query": "necesito saber si el sofá cabe en el salón",
+      "expected": "cinta",
+      "ranking": [
+        {
+          "id": "cinta",
+          "similarity": 0.4815410736259988
+        },
+        {
+          "id": "allen",
+          "similarity": 0.3267754818203806
+        },
+        {
+          "id": "adaptador",
+          "similarity": 0.31673662386750673
+        }
+      ],
+      "ms": 9.521900000001551
+    },
+    {
+      "query": "el control remoto se quedó sin energía",
+      "expected": "pilas",
+      "ranking": [
+        {
+          "id": "pilas",
+          "similarity": 0.41080506289730817
+        },
+        {
+          "id": "garantia",
+          "similarity": 0.32595602391858614
+        },
+        {
+          "id": "adaptador",
+          "similarity": 0.24103210715268988
+        }
+      ],
+      "ms": 30.134799999999814
+    },
+    {
+      "query": "no enciende la luz de mi escritorio",
+      "expected": "bombilla",
+      "ranking": [
+        {
+          "id": "bombilla",
+          "similarity": 0.711397578714747
+        },
+        {
+          "id": "manual",
+          "similarity": 0.32351302432077333
+        },
+        {
+          "id": "adaptador",
+          "similarity": 0.30252386728841163
+        }
+      ],
+      "ms": 7.999299999999494
+    },
+    {
+      "query": "cómo le quito la cal a la máquina de café",
+      "expected": "manual",
+      "ranking": [
+        {
+          "id": "manual",
+          "similarity": 0.7603925106810333
+        },
+        {
+          "id": "allen",
+          "similarity": 0.3968874422286457
+        },
+        {
+          "id": "garantia",
+          "similarity": 0.3465761498212013
+        }
+      ],
+      "ms": 4.643100000001141
+    },
+    {
+      "query": "se me cayó un botón de la camisa",
+      "expected": "costura",
+      "ranking": [
+        {
+          "id": "costura",
+          "similarity": 0.4133772554721695
+        },
+        {
+          "id": "allen",
+          "similarity": 0.31295431212982533
+        },
+        {
+          "id": "garantia",
+          "similarity": 0.24160647780135658
+        }
+      ],
+      "ms": 3.358799999999974
+    },
+    {
+      "query": "se dañó la aspiradora y quiero ver si la reparan",
+      "expected": "garantia",
+      "ranking": [
+        {
+          "id": "garantia",
+          "similarity": 0.7223008387851884
+        },
+        {
+          "id": "costura",
+          "similarity": 0.32801641325902364
+        },
+        {
+          "id": "manual",
+          "similarity": 0.29933013247833606
+        }
+      ],
+      "ms": 5.469300000000658
+    },
+    {
+      "query": "where is the cable to connect my computer to the TV",
+      "expected": "adaptador",
+      "ranking": [
+        {
+          "id": "adaptador",
+          "similarity": 0.5361575370920785
+        },
+        {
+          "id": "pilas",
+          "similarity": 0.353684734816749
+        },
+        {
+          "id": "allen",
+          "similarity": 0.23755731173541525
+        }
+      ],
+      "ms": 4.184400000000096
+    },
+    {
+      "query": "food for my cat",
+      "expected": null,
+      "ranking": [
+        {
+          "id": "manual",
+          "similarity": 0.1963052530391401
+        },
+        {
+          "id": "cinta",
+          "similarity": 0.10032461681430883
+        },
+        {
+          "id": "pilas",
+          "similarity": 0.09817972267038086
+        }
+      ],
+      "ms": 3.5262999999995372
+    },
+    {
+      "query": "pasaporte de viaje",
+      "expected": null,
+      "ranking": [
+        {
+          "id": "garantia",
+          "similarity": 0.14357779236655094
+        },
+        {
+          "id": "adaptador",
+          "similarity": 0.10606730987553362
+        },
+        {
+          "id": "pilas",
+          "similarity": 0.0855561021840919
+        }
+      ],
+      "ms": 2.9512999999988097
+    }
+  ]
+}
