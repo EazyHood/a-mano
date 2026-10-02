@@ -8,6 +8,8 @@
 
 The interface is in Spanish. Try the fictional collection, search `estuche gris`, or activate the optional local model and ask `quiero mostrar la pantalla del computador en el televisor`. The adapter's card leads to the exact location originally written in the record. A mano does not track objects or generate their locations.
 
+**Walk through a concrete example:** [El adaptador que sí estaba en casa](docs/caso-ficticio.md) · [English version](docs/fictional-case.md). Lucía is an explicitly fictional character; the guide uses the existing demo and real technical evidence, not a customer testimonial.
+
 ## Run
 
 ```sh
@@ -64,6 +66,6 @@ Tests cover data validation, import round trips, malformed/oversized/duplicate f
 
 New project created **2 October 2026 UTC** after the DEV Weekend window opened. Jhona requested a new useful app after reviewing five earlier projects. Source code was written for this app, with OpenAI Codex assistance; previous apps were references for needs, not copied as new entries. [Origin record](docs/PROVENANCE.md).
 
-**No DEV submission is claimed.** The event requires building for a real friend or family member. The reviewed material does not establish such a recipient; no relationship, testimonial or use experience has been invented. The product and synthetic tests can be reviewed independently while that eligibility fact remains unresolved.
+**No DEV submission is claimed.** On 2 October, Jhona chose an explicitly fictional demonstration case. The product and guide can be reviewed independently, but that case does not satisfy DEV Weekend's requirement to build for a real friend or loved one. No real relationship, testimonial or use experience is claimed. Reuse in another competition requires checking its actual rules first.
 
 MIT license for this repository. Third-party software and model licensing remain separate; see [notices](THIRD_PARTY_NOTICES.md).

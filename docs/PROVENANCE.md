@@ -6,8 +6,9 @@
 - OpenAI Codex produced implementation, original SVG illustrations, documentation and tests with independent agent review. No human field testing, user interview or adoption is claimed.
 - On 2 October Jhona requested a less generic visual design, original animations and stronger craft. The catalogue redesign, material-style SVGs and motion were produced with the same declared AI assistance; no human-only design authorship is claimed.
 - Demo records, dates, private-marker strings and evaluation queries are synthetic. Timestamps on fictional records are not repository history or evidence of prior user activity.
+- On 2 October, Jhona chose an explicitly fictional use case after the real-person requirement was discussed. Lucía, a designer in the demonstration narrative, is invented and is not represented as a friend, customer or research participant. The Spanish and English guides use existing demo records and distinguish their hypothetical story from actual technical checks.
 - MiniLM embeddings are executed genuinely on local CPU and browser ONNX WASM. Lexical matching and deterministic storage/validation are separate conventional code, not presented as model inference.
 - An E5 comparison and a fragmented-index experiment were retained as research evidence but not adopted because they failed to improve the measured tradeoff. No repeated search over many models is concealed.
 - The app is prepared for review. No DEV publication/submission, adjudicated eligibility, prize or payment is established by source code or this file.
 
-Do not write a first-person friend story until Jhona supplies a factual recipient and need. Any subsequent feedback must be attributed to an actual interaction, not synthesized as an event that occurred.
+The selected fictional route is an independent product demonstration, not a qualifying DEV Weekend entry. Do not resume requests for a real recipient automatically. Any future customer feedback or relationship claim must come from an actual interaction; use of this project in another competition requires a fresh eligibility and reuse check.
