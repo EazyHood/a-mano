@@ -1,8 +1,8 @@
 # A mano: remember the place, find the thing
 
-**Publication draft. DEV submission has not yet been confirmed.**
+**[Published on DEV as a Weekend Challenge submission, 2 October 2026](https://dev.to/eazyhood/a-mano-remember-the-place-find-the-thing-115).**
 
-*Prepared for the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01).*
+*Submitted to the [Hacktoberfest Weekend Challenge: Build for a Friend](https://dev.to/challenges/hacktoberfest-weekend-2026-10-01). Judging and any award remain unconfirmed.*
 
 ## What I Built
 
